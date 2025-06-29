@@ -18,6 +18,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>3.5.3</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.leethub.zh</groupId>
+			<artifactId>leethub-application</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

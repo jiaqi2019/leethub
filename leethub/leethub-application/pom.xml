@@ -13,7 +13,11 @@
 	<description>Leethub Application Module</description>
 
 	<dependencies>
-	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>3.5.3</version>
+		</dependency>
 	</dependencies>
 
 </project>
