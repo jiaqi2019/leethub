@@ -13,7 +13,11 @@
 	<description>Leethub Domain Module</description>
 
 	<dependencies>
-	
+		<dependency>
+			<groupId>com.leethub.zh</groupId>
+			<artifactId>leethub-infra</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 </project>

@@ -9,14 +9,17 @@
 	</parent>
 
 	<artifactId>leethub-application</artifactId>
+	<packaging>pom</packaging>
 	<name>leethub-application</name>
 	<description>Leethub Application Module</description>
+	<modules>
+		<module>controller</module>
+	</modules>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>3.5.3</version>
 		</dependency>
 	</dependencies>
 

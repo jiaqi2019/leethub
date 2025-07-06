@@ -4,3 +4,33 @@ server:
 spring:
   application:
     name: leethub-application
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/leetcode?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 20 # 初始连接数
+      min-idle: 20 # 最小连接数
+      max-active: 100 # 最大连接数
+      max-wait: 60000 # 最大等待时间
+      stat-view-servlet: # 监控页面
+        enabled: true # 是否启用监控页面
+        url-pattern: /druid/* # 监控页面路径
+        login-username: admin # 监控页面用户名
+        login-password: 123456 # 监控页面密码
+      filter: # 过滤器
+        stat: # 统计
+          enabled: true # 是否启用统计
+          slow-sql-millis: 2000 # 慢SQL时间
+          log-slow-sql: true # 是否记录慢SQL
+        wall: # 防火墙
+          enabled: true # 是否启用防火墙
+
+# MyBatis配置（原生MyBatis）
+# mybatis:
+#   mapper-locations: classpath:mapper/*.xml
+#   type-aliases-package: com.leethub.subject.infra.basic.entity
+#   configuration:
+#     map-underscore-to-camel-case: true
+#     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

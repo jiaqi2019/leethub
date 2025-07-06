@@ -16,12 +16,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>3.5.3</version>
+		</dependency>
+		
+		<!-- 重新添加infra模块依赖 -->
+		<dependency>
+			<groupId>com.leethub.zh</groupId>
+			<artifactId>leethub-infra</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.leethub.zh</groupId>
-			<artifactId>leethub-application</artifactId>
+			<artifactId>controller</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.leethub.zh</groupId>
+			<artifactId>leethub-domain</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
