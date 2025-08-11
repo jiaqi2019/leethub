@@ -23,6 +23,11 @@
             <artifactId>leethub-domain</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.leethub.zh</groupId>
+            <artifactId>leethub-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!-- MapStruct 依赖 -->
         <dependency>
             <groupId>org.mapstruct</groupId>

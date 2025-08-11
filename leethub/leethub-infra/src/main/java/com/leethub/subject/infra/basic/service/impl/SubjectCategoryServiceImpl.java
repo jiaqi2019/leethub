@@ -37,7 +37,6 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
      */
     @Override
     public SubjectCategory insert(SubjectCategory subjectCategory) {
-        System.out.println(subjectCategory.toString());
         this.subjectCategoryDao.insert(subjectCategory);
         return subjectCategory;
     }
